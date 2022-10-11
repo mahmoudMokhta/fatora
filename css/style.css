@@ -1,0 +1,29 @@
+
+#form {
+    margin: 2rem 0;
+    background-color: rgba(196, 248, 255, 0.603);
+}
+#theDate {
+
+    text-align: center;
+    margin: 2rem;
+}
+
+.delete{
+    font-size: 2rem;
+    cursor: pointer;
+    color: red;
+}
+.UpDate{
+    font-size: 2rem;
+    cursor: pointer;
+    color: green;
+}
+
+tr td {
+    text-align: center;
+}
+
+tr th {
+    text-align: center;
+}

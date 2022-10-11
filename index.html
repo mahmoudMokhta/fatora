@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row g-3" id="form">
+          <div class="col-md-2">
+            <label for="myID" class="form-label">ID</label>
+            <input type="text" class="form-control" id="myID" />
+          </div>
+          <div class="col-md-5">
+            <label for="inputName" class="form-label">اسم العميل</label>
+            <input placeholder=" ادخل اسمك" type="text" class="form-control" id="inputName" />
+          </div>
+        <div class="col-md-5">
+          <label for="inputPhon" class="form-label">رقم التليفون</label>
+          <input type="text" class="form-control" id="inputPhon" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">العنوان</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="المحافظه   +  المركز"
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="inputCount" class="form-label">عدد القطع</label>
+          <input type="text" class="form-control" id="inputCount" />
+        </div>
+        <div class="col-md-3">
+            <label for="inputSize" class="form-label">المقاس</label>
+            <input type="text" class="form-control" id="inputSize" />
+          </div>
+        <div class="col-md-3">
+          <label for="inputCategory" class="form-label">نوع المنتج</label>
+          <select id="inputCategory" class="form-select">
+            <option selected>خاص</option>
+            <option>شبابي</option>
+            <option>حريمي</option>
+          </select>
+        </div>
+        
+        <div class="col-md-3">
+          <label for="inputPrice" class="form-label">السعر شامل الشحن</label>
+          <input type="text" class="form-control" id="inputPrice" />
+        </div>
+        <div class="col-md-5">
+            <label for="inputSearch" class="form-label">ابحث عن رقم العميل</label>
+            <input type="search" class="form-control" id="inputSearch" />
+          </div> 
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="Create">انشاء فاتوره</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- create  table -->
+    <div id="myError"></div>
+    <table class="table container" id="table">
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>اسم العميل</th>
+              <th>رقم التليفون</th>
+              <th>العنوان</th>
+              <th>عدد</th>
+              <th>مقاس</th>
+              <th>نوع </th>
+              <th> السعر</th>
+              <th> التحكم</th>
+              
+            </tr>
+          </thead>
+          
+        
+      </table>
+
+    <script src="javascript/popper.js"></script>
+    <script src="javascript/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.2/dexie.min.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
